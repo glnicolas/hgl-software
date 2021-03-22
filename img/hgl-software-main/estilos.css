@@ -34,19 +34,11 @@ body {
 
 .header {
     height: 100vh;
+    /* 02 */
     background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/nueve.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    animation: movimiento 10s infinite linear alternate;  
-}
-
-@keyframes movimiento{
-    from{
-        background-position: bottom left;
-    }to{
-        background-position: top right;
-    }
 }
 
 .head{
