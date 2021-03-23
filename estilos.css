@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -26,7 +28,7 @@ body {
 
 .contenedor {
     width: 90%;
-    max-width: 1200px;
+    max-width: 12  00px;
     overflow: hidden;
     margin: auto;
     padding: 60px 0;
@@ -38,8 +40,27 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    animation: movimiento 10s infinite linear alternate;  
+    animation: movimiento 25s infinite linear alternate;  
 }
+
+.Desarrollo{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/fotis.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;    
+}
+
+.soporte{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/foto.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+     
+}
+
+
 
 @keyframes movimiento{
     from{
@@ -48,6 +69,17 @@ body {
         background-position: top right;
     }
 }
+
+.seguridad{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/seguridad.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+     
+}
+
+
 
 .head{
     padding: 0;
