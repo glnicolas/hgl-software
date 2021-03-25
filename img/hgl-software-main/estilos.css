@@ -4,8 +4,6 @@
     box-sizing: border-box;
 }
 
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -28,7 +26,7 @@ body {
 
 .contenedor {
     width: 90%;
-    max-width: 12  00px;
+    max-width: 1200px;
     overflow: hidden;
     margin: auto;
     padding: 60px 0;
@@ -36,19 +34,11 @@ body {
 
 .header {
     height: 100vh;
+    /* 02 */
     background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/nueve.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    animation: movimiento 25s infinite linear alternate;  
-}
-
-@keyframes movimiento{
-    from{
-        background-position: bottom left;
-    }to{
-        background-position: top right;
-    }
 }
 
 .head{
@@ -72,11 +62,6 @@ body {
     cursor: pointer;
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-}
-
-.menutodo:hover {
-    background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
-    
 }
 
 .menu-navegacion{
@@ -108,12 +93,9 @@ body {
     text-decoration: none;
 }
 
-.menu-navegacion:hover {
-    background: royalblue;
-}
+
 
 .titulo{
-    color: #fff;
     font-size: 60px;
     margin-bottom: 15px;
 }
