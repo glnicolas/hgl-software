@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 
-}
 
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+
 
 .contenedor {
     width: 90%;
@@ -28,10 +29,12 @@ body {
 
 .contenedor {
     width: 90%;
-    max-width: 12  00px;
-    overflow: hidden;
-    margin: auto;
-    padding: 60px 0;
+ max-width: 12  00px;
+max-width: 12  00px;
+max-width: 12 00px;
+overflow: hidden;
+margin: auto;
+padding: 60px 0;
 }
 
 .header {
@@ -40,6 +43,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     animation: movimiento 25s infinite linear alternate;  
 }
 
@@ -49,7 +53,7 @@ body {
     }to{
         background-position: top right;
     }
-}
+}    
 
 .head{
     padding: 0;
@@ -111,6 +115,7 @@ body {
 .menu-navegacion:hover {
     background: royalblue;
 }
+
 
 .titulo{
     color: #fff;
