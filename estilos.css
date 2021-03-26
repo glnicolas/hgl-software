@@ -38,13 +38,15 @@ padding: 60px 0;
 }
 
 .header {
-    height: 100vh;
-    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/nueve.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;
+    background: -webkit-linear-gradient(to right, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/nueve.jpg);
+    background: linear-gradient(to right, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/nueve.jpg);
     background-size: cover;
-
-    animation: movimiento 25s infinite linear alternate;  
+    background-attachment: fixed;
+    position: relative;
+    animation: movimiento 25s infinite linear alternate;    
 }
 
 @keyframes movimiento{
