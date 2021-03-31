@@ -35,8 +35,7 @@ body {
 .soporte{
     width: 100%;
     height: 680px;
-    background: #bc4e9c;
-    background-image: linear-gradient(to top, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/nico.jpg);
+    background-image:  url(img/soporte.png);
     background-size: cover;
     background-size: cover;
     background-attachment: fixed;
@@ -71,7 +70,8 @@ header .textos-header{
 }
 
 .wave{
-    position: absolute;
+    /*position: absolute;*/
+    display: block;
     bottom: 0;
     width: 100%;
 }
@@ -89,15 +89,17 @@ header .textos-header{
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
+.menutodo:hover {
+    background-image: linear-gradient(120deg, rgb(102, 166, 255) 0%, #66a6ff 100%);
+    
+}
+
 .menu-navegacion{
     position: fixed;
     top: 0;
     width: 30vw;
     height: 100%;
-    /* background-image: linear-gradient(to top, #fbc2eb 0%, #a6c0ee 100%); */
-    /* 02 */
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    /* 028 */
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
     flex-direction: column;
@@ -114,11 +116,148 @@ header .textos-header{
 }
 
 .menu-navegacion a{
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
 }
+.menu-navegacion:hover{
+    background: rgb(102, 166, 255);
+}
+
 
 .titulo{
-    font-size: 90px;
+    color: #fff;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+
+/* Services */
+.ServicesConten{
+    background: #000000;
+
+}
+.contenedor{
+    color: rgba(255, 251, 251, 0.75);
+}
+.subtitulo{
+    color: rgb(9, 56, 156);
+    font-size: 60px;
+    text-align: center;
+    font-weight: 300;
     margin-bottom: 30px;
+}
+
+.contenedor-servicio{
+    background: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenedor-servicio img{
+    width: 40%;
+}
+
+.checklist-servicio{
+    width: 45%;
+}
+
+.n-service{
+    font-size: 25px; 
+    color: #9f8ad0;
+    margin-bottom: 7px;
+}
+
+.service{
+    font-size: 20px;
+    color: ivory;
+    margin-bottom: 20px;
+    
+}
+
+.number{
+    display: inline-block;
+    /* 02 */
+    background-image: linear-gradient(to top, #5c35b8 0%, #fbc2eb 100%);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.gallery{
+    background: rgb(0, 0, 0);
+}
+
+.galeria{
+    font-family: 'open sans';
+}
+
+.galeria h1{
+    text-align: center;
+    margin:20px 0 15px 0;
+    font-weight: 300;
+}
+
+/*.linea{
+    border-top: 5px solid #0077C0;
+    margin-bottom: 40px;
+}*/
+
+.contenedor-imagenes{
+    display:flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius:3px;
+}
+.contenedor-imagenes .imagen{
+    width: 32%;
+    position: relative;
+    height:250px;
+    margin-bottom:5px;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
+}
+.imagen img{
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background:rgb(102, 166, 255);
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .5s ease;
+}
+
+.overlay h2{
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-size:30px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.imagen:hover .overlay{
+    height:100%;
+    cursor: pointer;
 }

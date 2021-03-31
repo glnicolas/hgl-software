@@ -39,7 +39,7 @@ padding: 60px 0;
 
 .header {
     width: 100%;
-    height: 450px;
+    height: 550px;
     background: #bc4e9c;
     background: -webkit-linear-gradient(to right, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/nueve.jpg);
     background: linear-gradient(to right, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/nueve.jpg);
@@ -128,16 +128,23 @@ padding: 60px 0;
 }
 
 /* Services */
+.ServicesConten{
+    background: #000000;
 
+}
+.contenedor{
+    color: rgba(255, 251, 251, 0.75);
+}
 .subtitulo{
-    color: #9f8ad0;
-    font-size: 50px;
+    color: rgb(9, 56, 156);
+    font-size: 60px;
     text-align: center;
     font-weight: 300;
     margin-bottom: 30px;
 }
 
 .contenedor-servicio{
+    background: rgb(0, 0, 0);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -152,31 +159,35 @@ padding: 60px 0;
     width: 45%;
 }
 
-.service{
-    margin-bottom: 20px;
+.n-service{
+    font-size: 25px; 
+    color: #9f8ad0;
+    margin-bottom: 7px;
 }
 
-.n-service{
-    margin-bottom: 7px;
-    color: #9f8ad0;
+.service{
+    font-size: 20px;
+    color: ivory;
+    margin-bottom: 20px;
+    
 }
 
 .number{
     display: inline-block;
     /* 02 */
-    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
-    line-height: 30px;
+    background-image: linear-gradient(to top, #5c35b8 0%, #fbc2eb 100%);
+    line-height: 40px;
     text-align: center;
     border-radius: 50%;
     margin-right: 5px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     color: #fff;
     font-weight: 700;
 }
 
 .gallery{
-    background: #f2f2f2;
+    background: rgb(0, 0, 0);
 }
 
 .galeria{
@@ -228,7 +239,7 @@ padding: 60px 0;
 }
 
 .overlay h2{
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-weight: 300;
     font-size:30px;
     position: absolute;
@@ -277,7 +288,10 @@ padding: 60px 0;
     width: 40px;
     cursor: pointer;
 }*/
+.Contenedor{
+    background: rgb(0, 0, 0);
 
+}
 .experts{
     width: 100%;
     display: flex;
@@ -289,24 +303,28 @@ padding: 60px 0;
 .cont-expert{
     width: 30%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    
 }
 
 .cont-expert img{
     display: block;
     margin: auto;
-    width: 80%;
+    width: 100%;
 }
 
 .n-expert{
+    color: rgb(235, 236, 236);
+    font-size: 30px;
     width: 100%;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 50px;
     font-weight: 400;
 }
 
 footer{
-    background: #9f8ad0;
+    background: rgb(27, 66, 92);
     padding-bottom: 0.1px;
 }
 
