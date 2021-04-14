@@ -195,7 +195,7 @@ header .textos-header{
     font-weight: 700;
 }
 
-.gallery{
+/*.gallery{
     background: rgb(0, 0, 0);
 }
 
@@ -212,7 +212,7 @@ header .textos-header{
 /*.linea{
     border-top: 5px solid #0077C0;
     margin-bottom: 40px;
-}*/
+}
 
 .contenedor-imagenes{
     display:flex;

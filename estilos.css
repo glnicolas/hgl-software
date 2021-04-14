@@ -21,6 +21,7 @@ body {
 
 :root {
     scroll-behavior: smooth;
+    
 }
 
 body {
@@ -38,6 +39,7 @@ padding: 60px 0;
 }
 
 .header {
+    z-index: 1;
     width: 100%;
     height: 550px;
     background: #bc4e9c;
@@ -69,6 +71,7 @@ padding: 60px 0;
 
 
 .menutodo{
+   
     position: fixed;
     top: 30px;
     right: 30px;
@@ -116,6 +119,7 @@ padding: 60px 0;
 }
 
 
+
 .titulo{
     color: #fff;
     font-size: 60px;
@@ -147,7 +151,7 @@ padding: 60px 0;
     background: rgb(0, 0, 0);
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: left;
     flex-wrap: wrap;
 }
 
@@ -187,6 +191,7 @@ padding: 60px 0;
 }
 
 .gallery{
+   
     background: rgb(0, 0, 0);
 }
 
@@ -281,6 +286,114 @@ padding: 60px 0;
     }
 }
 
+.color{
+    background: rgb(0, 0, 0);
+}
+
+
+
+.fundadores{
+     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+	position: relative;
+	width: 100%;
+	margin-top: 50px;
+	height: 20vh;
+   
+}
+.fundadores > h2{
+	position: absolute;
+	top: -50px;
+	width: inherit;
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+	font-size: 40px;
+	font-weight: 500;
+	color: rgb(0, 0, 0);
+}
+.content-fundadores{
+    background: rgb(0, 0, 0);
+	display: flex;
+	width: 100%;
+	height: 115%;
+}
+.fundadores .nico-container{
+	position: relative;
+	flex-grow: 1;
+	transition: 1s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background: rgb(128, 129, 133);
+	cursor: pointer;
+}
+.fundadores .nico-container:hover{
+	flex-grow: 5;
+}
+.fundadores .nico-container .card{
+	max-width: 300px;
+	text-align: center;
+	transition: 0.5s;
+}
+.nico-container .card .clara-img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin:0 auto;
+}
+.nico-container .card .clara-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.nico-container .card h2{
+	margin:1px 0px;
+	color: #fff;
+	font-weight: 750;
+}
+
+
+/******** Oscar Fundador *********/
+.fundadores .oscar-container{
+	position: relative;
+	flex-grow: 1;
+	transition: 1s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background: #270bc8;
+	cursor: pointer;
+}
+.fundadores .oscar-container:hover{
+	flex-grow: 5;
+}
+.fundadores .oscar-container .card{
+	max-width: 300px;
+	text-align: center;
+	transition: 0.5s;
+}
+.oscar-container .card .oscar-img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin:0 auto;
+}
+.oscar-container .card .oscar-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.oscar-container .card h2{
+	margin:1px 0px;
+	color: #fff;
+	font-weight: 300;
+}
+
+
 /*.close{
     position: absolute;
     top: 15px;
@@ -289,6 +402,7 @@ padding: 60px 0;
     cursor: pointer;
 }*/
 .Contenedor{
+    
     background: rgb(0, 0, 0);
 
 }
