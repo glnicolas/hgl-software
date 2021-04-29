@@ -42,9 +42,9 @@ padding: 60px 0;
     z-index: 1;
     width: 100%;
     height: 550px;
-    background: #bc4e9c;
-    background: -webkit-linear-gradient(to right, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/nueve.jpg);
-    background: linear-gradient(to right, rgba(251, 194, 235, 0.486) 0%, hsla(218, 68%, 79%, 0.514) 100%), url(img/nueve.jpg);
+    
+    background:  url(img/nueve.jpg);
+    background:  url(img/nueve.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -133,12 +133,10 @@ padding: 60px 0;
 
 /* Services */
 .ServicesConten{
-    background: #000000;
+    background: hsla(0, 0%, 100%, 0.883);
 
 }
-.contenedor{
-    color: rgba(255, 251, 251, 0.75);
-}
+
 .subtitulo{
     color: rgb(9, 56, 156);
     font-size: 60px;
@@ -148,7 +146,7 @@ padding: 60px 0;
 }
 
 .contenedor-servicio{
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
     align-items: left;
@@ -164,14 +162,14 @@ padding: 60px 0;
 }
 
 .n-service{
-    font-size: 25px; 
+    font-size: 30px; 
     color: #9f8ad0;
     margin-bottom: 7px;
 }
 
 .service{
-    font-size: 20px;
-    color: ivory;
+    font-size: 25px;
+    color: rgb(29, 134, 141);
     margin-bottom: 20px;
     
 }
@@ -192,7 +190,7 @@ padding: 60px 0;
 
 .gallery{
    
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
 }
 
 .galeria{
@@ -287,111 +285,9 @@ padding: 60px 0;
 }
 
 .color{
-    background: rgb(0, 0, 0);
+    background: rgb(138, 135, 135);
 }
 
-
-
-.fundadores{
-     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
-	position: relative;
-	width: 100%;
-	margin-top: 50px;
-	height: 20vh;
-   
-}
-.fundadores > h2{
-	position: absolute;
-	top: -50px;
-	width: inherit;
-	display: flex;
-	justify-content: center;
-	z-index: 10;
-	font-size: 40px;
-	font-weight: 500;
-	color: rgb(0, 0, 0);
-}
-.content-fundadores{
-    background: rgb(0, 0, 0);
-	display: flex;
-	width: 100%;
-	height: 115%;
-}
-.fundadores .nico-container{
-	position: relative;
-	flex-grow: 1;
-	transition: 1s;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-	background: rgb(128, 129, 133);
-	cursor: pointer;
-}
-.fundadores .nico-container:hover{
-	flex-grow: 5;
-}
-.fundadores .nico-container .card{
-	max-width: 300px;
-	text-align: center;
-	transition: 0.5s;
-}
-.nico-container .card .clara-img{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	overflow: hidden;
-	margin:0 auto;
-}
-.nico-container .card .clara-img img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-.nico-container .card h2{
-	margin:1px 0px;
-	color: #fff;
-	font-weight: 750;
-}
-
-
-/******** Oscar Fundador *********/
-.fundadores .oscar-container{
-	position: relative;
-	flex-grow: 1;
-	transition: 1s;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	overflow: hidden;
-	background: #270bc8;
-	cursor: pointer;
-}
-.fundadores .oscar-container:hover{
-	flex-grow: 5;
-}
-.fundadores .oscar-container .card{
-	max-width: 300px;
-	text-align: center;
-	transition: 0.5s;
-}
-.oscar-container .card .oscar-img{
-	width: 100px;
-	height: 100px;
-	border-radius: 50%;
-	overflow: hidden;
-	margin:0 auto;
-}
-.oscar-container .card .oscar-img img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-.oscar-container .card h2{
-	margin:1px 0px;
-	color: #fff;
-	font-weight: 300;
-}
 
 
 /*.close{
@@ -403,7 +299,7 @@ padding: 60px 0;
 }*/
 .Contenedor{
     
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
 
 }
 .experts{
@@ -422,6 +318,8 @@ padding: 60px 0;
     
 }
 
+
+
 .cont-expert img{
     display: block;
     margin: auto;
@@ -429,7 +327,7 @@ padding: 60px 0;
 }
 
 .n-expert{
-    color: rgb(235, 236, 236);
+    color: rgb(9, 13, 221);
     font-size: 30px;
     width: 100%;
     display: inline-block;
@@ -501,6 +399,9 @@ footer{
     background: #fff;
     color:#764ba2;
 }
+
+
+
 
 @media screen and (max-width: 800px){
     .menu-navegacion{
