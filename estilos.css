@@ -66,7 +66,7 @@ padding: 60px 0;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    color: #fff;
+    color: rgb(109, 31, 31);
 }
 
 
@@ -190,7 +190,7 @@ padding: 60px 0;
 
 .gallery{
    
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
 }
 
 .galeria{
@@ -372,7 +372,7 @@ footer{
 
 .social-media-icon{
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 30px;
     width: 60px;
     height: 60px;
     border: 1px solid #fff;
@@ -382,9 +382,215 @@ footer{
 }
 
 .social-media-icon i{
-    font-size: 30px;
+    font-size: 40px;
     line-height: 60px;
 }
+
+.btn-open-popup{
+    display: inline-block;
+    margin-left: 30px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+.btn-open-popup i{
+    font-size: 40px;
+    line-height: 60px;
+}
+
+
+
+.container-all:target{
+    
+    visibility: visible;
+    opacity: 1;
+}
+
+.container-all:target .popup{
+    background: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    transform: rotate(0deg) translate(-50%, -50%);
+    visibility: visible;
+}
+
+
+.popup{
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    background: white;
+    visibility: hidden;
+    top: -80%;
+    left: -80%;
+    transform: rotate(90deg) translate(-150%, 230%);
+    transition: all 600ms;
+}
+
+
+.fundadores{
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
+   position: relative;
+   width: 350%;
+   margin-top: 85px;
+   height: 50vh;
+  
+}
+
+.content-fundadores{
+   background: rgb(0, 0, 0);
+   display: flex;
+   width: 100%;
+   height: 100%;
+}
+.fundadores .nico-container{
+   position: relative;
+   flex-grow: 1;
+   transition: 1s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   background: rgb(128, 129, 133);
+   cursor: pointer;
+}
+.fundadores .nico-container:hover{
+   flex-grow: 5;
+}
+.fundadores .nico-container .card{
+   max-width: 300px;
+   text-align: center;
+   transition: 0.5s;
+}
+.nico-container .card .clara-img{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin:0 auto;
+}
+.nico-container .card .clara-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.nico-container .card h2{
+   margin:30px 0px;
+   color: #fff;
+   font-weight: 750;
+}
+.nico-container .card h2{
+	margin:30px 0px;
+	color: #fff;
+	font-weight: 300;
+}
+
+
+
+/******** Oscar Fundador *********/
+.fundadores .oscar-container{
+   position: relative;
+   flex-grow: 1;
+   transition: 1s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+   background: #270bc8;
+   cursor: pointer;
+}
+.fundadores .oscar-container:hover{
+   flex-grow: 5;
+}
+.fundadores .oscar-container .card{
+   max-width: 300px;
+   text-align: center;
+   transition: 0.5s;
+}
+.oscar-container .card .oscar-img{
+   width: 200px;
+   height: 200px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin:0 auto;
+}
+.oscar-container .card .oscar-img img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.oscar-container .card h2{
+   margin:1px 0px;
+   color: #fff;
+   font-weight: 300;
+}
+
+.btn-close-popup{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    padding: 20px;
+    background: black;
+    color: white;
+    border-radius: 50%;
+    line-height: 10px;
+}
+
+@media screen and (max-width: 900px){
+    .popup{
+        flex-direction: column;
+        height: 100%;
+        max-height: 800px;
+    }
+    
+    .img{
+        width: 100%;
+        height: 40%;
+    }
+    
+    .container-text{
+        width: 100%;
+        height: 60%;
+        padding: 80px;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .container-text{
+        padding: 20px;
+    }
+    
+    .container-text h1{
+        font-size: 20px;
+    }
+    
+    .container-text p{
+        font-size: 12px;
+    }
+}
+
+
+
+.container-all{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 600ms;
+}
+
+
+
 
 .line{
     width: 90%;
