@@ -66,7 +66,6 @@ body {
 
 
 .menutodo {
-
     position: fixed;
     top: 30px;
     right: 30px;
@@ -79,15 +78,14 @@ body {
 }
 
 .menutodo:hover {
-    background-image: linear-gradient(120deg, rgb(102, 166, 255) 0%, #66a6ff 100%);
-
+    background-image: linear-gradient(120deg, rgb(173, 207, 255) 0%, #66a6ff 100%);
 }
 
 .menu-navegacion {
     position: fixed;
     top: 0;
-    width: 30vw;
-    height: 100%;
+    min-width: 30vw;
+    min-height: 100vh;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     display: flex;
@@ -100,6 +98,13 @@ body {
     box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 }
 
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .spread {
     transform: translateX(0);
 }
@@ -110,11 +115,11 @@ body {
     text-decoration: none;
 }
 
-.menu-navegacion:hover {
-    background: rgb(102, 166, 255);
+.menu-navegacion a:hover {
+    background: rgb(0, 0, 0, 0.20);
+    width: 100%;
+    height: 15vh;
 }
-
-
 
 .titulo {
     margin-top: 25px;
@@ -227,7 +232,7 @@ body {
 }
 
 .overlay {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     background: rgb(102, 166, 255);
