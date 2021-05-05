@@ -30,12 +30,12 @@ body {
 
 .contenedor {
     width: 90%;
- max-width: 12  00px;
-max-width: 12  00px;
-max-width: 12 00px;
-overflow: hidden;
-margin: auto;
-padding: 60px 0;
+    max-width: 12  00px;
+    max-width: 12  00px;
+    max-width: 12 00px;
+    overflow: hidden;
+    margin: auto;
+    padding: 60px 0;
 }
 
 .header {
@@ -335,6 +335,32 @@ padding: 60px 0;
     font-weight: 400;
 }
 
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.card {
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
+}
+
+.cards img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+
 footer{
     background: rgb(27, 66, 92);
     padding-bottom: 0.1px;
@@ -419,6 +445,7 @@ footer{
 
 
 .popup{
+    z-index: 2;
     width: 100%;
     max-width: 1000px;
     height: 500px;
@@ -434,6 +461,7 @@ footer{
 
 
 .fundadores{
+    
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75);
    position: relative;
    width: 350%;
