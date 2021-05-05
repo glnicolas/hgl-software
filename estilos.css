@@ -27,8 +27,6 @@ body {
 .contenedor {
     width: 90%;
     max-width: 12 00px;
-    max-width: 12 00px;
-    max-width: 12 00px;
     overflow: hidden;
     margin: auto;
     padding: 60px 0;
@@ -424,7 +422,9 @@ footer {
 }
 
 
+
 .popup {
+
     width: 100%;
     max-width: 1000px;
     height: 500px;
