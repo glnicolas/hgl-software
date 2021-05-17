@@ -228,7 +228,7 @@ body {
 
 .contenedor-imagenes {
     display: flex;
-    width: 85%;
+    width: 90%;
     margin: auto;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -239,7 +239,7 @@ body {
     width: 32%;
     position: relative;
     height: 250px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
     box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, .75)
 }
 
@@ -337,10 +337,11 @@ body {
 }
 
 .cont-expert {
+  
     width: 30%;
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 
 }
 
@@ -377,68 +378,54 @@ footer {
 
 /* Fundadores */
 .sobre-nosotros {
+
     text-align: center;
     font-size: 56px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     font-weight: 600;
-    color: rgb(9, 13, 221);
+    color: rgb(0, 0, 0);
 }
 
 .slogan {
     font-size: 24px;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 50px;
 }
 
-.encima {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(52, 73, 94, 0.815);
+.cards{
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.encima h2 {
-    position: relative;
-    top: 45%;
-    text-align: center;
+.cards .card{
+    background: #7c7e92;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card > .contenido-texto-card{
+    width: 60%;
     color: #fff;
 }
 
-.encima div {
-    position: relative;
-    display: block;
-    top: 46%;
-    width: 40px;
-    height: 5px;
-    background: #fff;
-    margin: auto;
-}
-
-.cards {
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.card {
-    margin: 20px 0;
-    width: 30%;
-    height: 250px;
-    text-align: center;
-    padding: 20px;
-    box-shadow: 0px 0px 4px 0 rgba(52, 73, 94, 0.849);
-}
-
-.cards img {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 100%;
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
 }
 
 
@@ -564,6 +551,21 @@ footer {
         width: 80%;
         margin-bottom: 40px;
     }
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
 }
 
 
@@ -606,6 +608,18 @@ footer {
         text-align: center;
         width: 95%;
         margin-bottom: 40px;
+    }
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
     }
 
 }
